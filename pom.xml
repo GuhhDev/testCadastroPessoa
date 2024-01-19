@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.test</groupId>
 	<artifactId>cadastroPessoas</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>cadastroPessoas</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -42,7 +42,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<version>RELEASE</version>
+			<version>3.2.1</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
