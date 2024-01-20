@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.br.CPF;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -28,7 +29,7 @@ public class Pessoa {
     @NotNull(message = "A data de nascimento não pode ser nula")
     @Past(message = "A data de nascimento não pode ser uma data futura")
     @Column(name = "data_nascimento")
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @NotEmpty(message = "A pessoa deve possuir ao menos um contato")
